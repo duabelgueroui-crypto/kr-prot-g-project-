@@ -1,0 +1,1285 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2/"
+     xml:base="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#applied_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#applied_to">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#modaloperator"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#WFF"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#based_on -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#based_on">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#default_logic"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#default_theory"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#defaultrule"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#has -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#has">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#logic"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#inferenceproceduresteps"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#semantics"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#syntax"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#hasargument -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#hasargument">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#function"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#predicate"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#term"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#hasaxiom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#hasaxiom">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#ontology"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#axioms"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#hascomponent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#hascomponent">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#WFF"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#WFF"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#constants"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#logicalconnectives"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#variables"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#hasconsequent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#hasconsequent">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#defaultrule"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#WFF"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#hasextention -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#hasextention">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#default_logic"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#extention"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#hasfacts -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#hasfacts">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#default_theory"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#WFF"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#hasjustification -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#hasjustification">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#defaultrule"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#WFF"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#haslayer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#haslayer">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#semantic_web"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#foundational_layer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#logical_layer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#querying_layer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#haspart -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#haspart">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#descriptional_logic"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#ontology"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#semantic_network"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#concept"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#individuals"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#hasprerequisite -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#hasprerequisite">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#defaultrule"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#WFF"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#hasrule -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#hasrule">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#default_theory"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#defaultrule"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#hassemantic -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#hassemantic">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#modal_logic"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#kripesemantic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#hasstatus -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#hasstatus">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#WFF"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#semantic_classification"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#inheritsfrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#inheritsfrom">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#individuals"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#concept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#quantifier_restriction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#quantifier_restriction">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#descriptional_logic"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#quantifier"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#usesdl -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#usesdl">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#ontology"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#descriptional_logic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#usesfunction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#usesfunction">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#FirstOrder_logic"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#descriptional_logic"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#function"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#useslanguages -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#useslanguages">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#ontology"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#semantic_web"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#language"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#usesmodaloperator -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#usesmodaloperator">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#modal_logic"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#modaloperator"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#usesontology -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#usesontology">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#semantic_web"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#ontology"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#usespredicate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#usespredicate">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#FirstOrder_logic"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#default_logic"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#descriptional_logic"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#modal_logic"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#predicate"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#usesquantifier -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#usesquantifier">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#FirstOrder_logic"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#descriptional_logic"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#nonclassical_logic"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#quantifier"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#hascomplexitylevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#hascomplexitylevel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#semantic_representation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#hasdefinition -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#hasdefinition">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#semantic_representation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#hasgoal -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#hasgoal">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#semantic_web"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#isformal -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#isformal">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#semantic_representation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#supporysinference -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#supporysinference">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#semantic_representation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#FirstOrder_logic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#FirstOrder_logic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#classical_logic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#usesfunction"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#function"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#usespredicate"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#predicate"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#usesquantifier"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#quantifier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#OWL -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#OWL">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#RDF -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#RDF">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#RDFS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#RDFS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#WFF -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#WFF">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#hascomponent"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#logicalconnectives"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#hascomponent"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#constants"/>
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#variables"/>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#hascomponent"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#constants"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#hascomponent"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#variables"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#syntax"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#hasstatus"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#contradiction"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#satisfiable"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#tautology"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#axioms -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#axioms"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#classical_logic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#classical_logic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#logic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#concept -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#concept">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#individuals"/>
+        <rdfs:comment>they are called class in ontology and concept node in semantic network</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#conjunction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#conjunction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#logicalconnectives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#constants -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#constants">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#individuals"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#syntax"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#function"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#variables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#contradiction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#contradiction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#semantic_classification"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#satisfiable"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#tautology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#default_logic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#default_logic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#nonclassical_logic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#based_on"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#defaultrule"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#hasextention"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#extention"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#default_theory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#default_theory">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#based_on"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#defaultrule"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#hasfacts"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#WFF"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#defaultrule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#defaultrule">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#hasconsequent"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#WFF"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#hasjustification"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#WFF"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#hasprerequisite"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#WFF"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#hasconsequent"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#WFF"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#hasjustification"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#WFF"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#hasprerequisite"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#WFF"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#descriptional_logic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#descriptional_logic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#classical_logic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#quantifier_restriction"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#quantifier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#usesfunction"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#function"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#usespredicate"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#predicate"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#usesquantifier"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#quantifier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#disjonction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#disjonction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#logicalconnectives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#equivalence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#equivalence">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#logicalconnectives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#existensialquantifier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#existensialquantifier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#quantifier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#extention -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#extention">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#based_on"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#defaultrule"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#hasfacts"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#WFF"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#foundational_layer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#foundational_layer"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#function -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#function">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#hasargument"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#term"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#variables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#implication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#implication">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#logicalconnectives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#individuals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#individuals">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#constants"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#inheritsfrom"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#inheritsfrom"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#concept"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>they are called instances in ontology and semantic network</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#inferenceproceduresteps -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#inferenceproceduresteps"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#knowledge_representation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#knowledge_representation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#kripesemantic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#kripesemantic">
+        <rdfs:comment>A Kripke model consists of:possible worlds, accessibility relation between worlds, a valuation assigning to each propositional variable the set of worlds where it is true</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#language -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#language">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#knowledge_representation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#logic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#logic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#knowledge_representation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#has"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#inferenceproceduresteps"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#semantics"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#syntax"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#logical_layer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#logical_layer"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#logicalconnectives -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#logicalconnectives">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#syntax"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#logicalequivalence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#logicalequivalence">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#semantics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#modal_logic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#modal_logic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#nonclassical_logic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#usesmodaloperator"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#modaloperator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#modaloperator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#modaloperator">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#applied_to"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#WFF"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#necessity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#necessity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#modaloperator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#negation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#negation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#logicalconnectives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#nonclassical_logic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#nonclassical_logic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#logic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#hassemantic"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#kripesemantic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#usespredicate"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#predicate"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#usesquantifier"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#quantifier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#ontology -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#ontology">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#semantic_representation"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#haspart"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#concept"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#individuals"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#role"/>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#usesdl"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#descriptional_logic"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#useslanguages"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#language"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#hasaxiom"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#axioms"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#possibility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#possibility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#modaloperator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#predicate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#predicate">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#hasargument"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#term"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#propositional_logic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#propositional_logic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#classical_logic"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#quantifier"/>
+        <rdfs:comment>a formal sysytem composed of propositions that can be either true or false but not the same togheter</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#quantifier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#quantifier"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#querying_layer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#querying_layer"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#resolution_method -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#resolution_method">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#inferenceproceduresteps"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#role -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#role">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#predicate"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#hasargument"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#term"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>they are called arc labels in semantic network and relations in ontology</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#satisfiable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#satisfiable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#semantic_classification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#semantic_classification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#semantic_classification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#semantics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#semantic_network -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#semantic_network">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#semantic_representation"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#haspart"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#concept"/>
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#role"/>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#haspart"/>
+                                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#individuals"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#usesdl"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#descriptional_logic"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#semantic_representation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#semantic_representation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#knowledge_representation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#semantic_web -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#semantic_web">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#semantic_representation"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#haslayer"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#foundational_layer"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#haslayer"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#logical_layer"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#haslayer"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#querying_layer"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#useslanguages"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#language"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#usesontology"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#ontology"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#semantics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#semantics"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#standarization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#standarization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#inferenceproceduresteps"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#syntax -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#syntax"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#tautology -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#tautology">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#semantic_classification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#term -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#term">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#constants"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#variables"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#function"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#hasargument"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#term"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#universalquantifier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#universalquantifier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#quantifier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#variables -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#variables">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#syntax"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#RIF -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#RIF">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#logical_layer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#SPARKQL -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#SPARKQL"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#XML -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#XML">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#foundational_layer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#ahmed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#ahmed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#individuals"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#p_and_not_p -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#p_and_not_p">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#tautology"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#students -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#students">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#teachingfunction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#teachingfunction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2026/4/untitled-ontology-2#function"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
